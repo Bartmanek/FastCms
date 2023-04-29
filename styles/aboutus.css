@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main_head {
+  margin-left: 18vw;
+  font-size: 4.63vh;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+}
+
+.main_img {
+  border-radius: 50%;
+  height: 13vw;
+  width: 13vw;
+}
+
+.main_text {
+  margin-left: 5vw;
+  width: 43vw;
+  font-size: 3.7vh;
+  text-indent: 1vw;
+}
+
+@media only screen and (max-width: 750px) {
+  .main_text {
+    margin-left: 5vw;
+    width: 43vw;
+    font-size: 2.7vh;
+    text-indent: 1vw;
+  }
+}

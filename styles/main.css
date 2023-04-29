@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #ff0000;
+    --font-color: #5c6b73;
+}
+
+body {
+    font-family: "League Gothic";
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    object-fit: cover;
+}
+
+.header {
+    height: 18.5vh;
+    width: 100%;
+    font-size: 5.09vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 2.5vw;
+    margin-right: 12vw;
+}
+
+.social_logo {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+}
+
+#logo {
+    margin-left: 12vw;
+    font-size: 7.41vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.main {
+    height: calc(100vh - (5.74vh + 18.5vh));
+}
+
+.footer {
+    height: 5.74vh;
+    width: 100%;
+    font-size: 3.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#credits {
+    margin-right: 12vw;
+}
+
+#contact {
+    margin-left: 12vw;
+}
+
+.nav_open {
+    visibility: hidden;
+    display: none;
+}
+
+.header_open {
+    visibility: hidden;
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .header_open {
+        visibility: visible;
+        height: 10vh;
+        width: 100%;
+        font-size: 5.09vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header {
+        visibility: hidden;
+        display: none;
+    }
+
+    .nav_open {
+        visibility: hidden;
+        display: none;
+        height: 0;
+        width: 100%;
+        font-size: 5.09vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        margin-left: 2vw;
+        font-size: 7.41vh;
+    }
+
+    .open_nav {
+        transition: 0.2s;
+        height: 40vh;
+        visibility: visible;
+        display: flex;
+        border-top: 1px black solid;
+        border-bottom: 1px black solid;
+    }
+
+    .menu_icon {
+        margin-right: 2vw;
+    }
+
+    .el1,
+    .el2,
+    .el3 {
+        background-color: var(--font-color);
+        width: 5vw;
+        height: 0.7vh;
+        border-radius: 50px;
+        transition: 0.4s;
+    }
+
+    .el1,
+    .el2 {
+        margin-bottom: 3px;
+    }
+
+    .change .el1 {
+        transform: translateY(12px) rotate(-45deg);
+    }
+
+    .change .el2 {
+        opacity: 0;
+    }
+
+    .change .el3 {
+        transform: translateY(-7px) rotate(45deg);
+    }
+
+    .main {
+        height: calc(100vh - (5.74vh + 10vh));
+    }
+}

@@ -1,0 +1,63 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 8.89vh;
+  margin: 0;
+  margin-bottom: 2vh;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  border: 2px var(--font-color) solid;
+  border-radius: 30px;
+  width: 35vw;
+  height: 54vh;
+  align-items: center;
+}
+
+input {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 25px;
+  height: 5.56vh;
+  width: 25.78vw;
+  border: none;
+  font-size: 2.31vh;
+  text-align: center;
+}
+
+label[for="name"] {
+  margin-top: 2.5vh;
+}
+
+label {
+  align-self: flex-start;
+  font-size: 3.33vh;
+  margin-left: 6vw;
+}
+
+input[type="submit"] {
+  width: 9.95vw;
+  margin-top: 2vh;
+}
+
+input::placeholder {
+  color: var(--primary-color);
+}
+
+.error_mes {
+  color: var(--secondary-color);
+  align-self: flex-start;
+  font-size: 2.6vh;
+  margin-left: 6vw;
+  font-weight: 500;
+}
+
+.info {
+  font-size: 2.5vh;
+}

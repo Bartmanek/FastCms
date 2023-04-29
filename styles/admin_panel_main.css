@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #ed3434;
+  --font-color: #5c6b73;
+}
+
+body {
+  font-family: "League Gothic";
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.panel {
+  height: 100vh;
+  width: 18vw;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+#logo {
+  height: 13.5vh;
+  width: 100%;
+  font-size: 7vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(237, 52, 52, 0.8);
+}
+
+.blur {
+  width: 100%;
+  height: 0.3vh;
+  background-color: white;
+  filter: blur(5px);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  height: calc(100vh - 13.5vh);
+  font-size: 2.7vh;
+}
+
+.nav > a,
+.down > a {
+  margin-left: 1.93vw;
+}
+
+.checked {
+  display: flex;
+  margin-left: 5%;
+  width: 90%;
+  height: 4vh;
+  border-radius: 40px;
+  background-color: rgba(139, 138, 138, 0.336);
+  align-items: center;
+}
+.checked > a {
+  margin-left: calc(1.93vw - 5%);
+}
+
+.down {
+  height: calc(100vh - 13.5vh);
+  font-size: 2.7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.down > a:nth-child(even) {
+  margin-bottom: 1vh;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+i {
+  color: var(--primary-color);
+}
+
+.content {
+  display: flex;
+}
+
+.main {
+  height: 100vh;
+  width: calc(100% - 18vw);
+  color: var(--font-color);
+}
+
+.heading {
+  text-align: center;
+  font-size: 7vh;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  background-color: #5c6b733a;
+  color: var(--primary-color);
+  border: 1px solid black;
+  border-radius: 35px;
+  height: 10.3vh;
+  width: 21vw;
+  margin-inline: 3vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.63vh;
+}
+
+.box-admin {
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid black;
+  border-radius: 35px;
+  height: 10.3vh;
+  width: 21vw;
+  margin-inline: 3vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.63vh;
+}
+
+.cont {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont_heading {
+  font-size: 3.7vh;
+  align-self: flex-start;
+  margin-left: 9vw;
+}
+
+.themes {
+  display: flex;
+  height: 53.43vh;
+  width: 67.24vw;
+  border: 1px solid black;
+  border-radius: 35px;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  height: 45vh;
+}
+
+.left_arrow {
+  display: flex;
+  height: 100%;
+  width: 6vw;
+  background-color: #5c6b7370;
+  border-radius: 35px 0 0 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5vh;
+}
+
+#photoSpace {
+  display: flex;
+  height: 45vh;
+  width: calc(100% - 12vw);
+}
+
+#photoSpace > img {
+  height: 100%;
+  width: 100%;
+}
+
+.right_arrow {
+  display: flex;
+  height: 100%;
+  width: 6vw;
+  background-color: #5c6b7370;
+  border-radius: 0 35px 0 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5vh;
+}
+
+.info {
+  display: flex;
+  height: 8.42vh;
+  width: 67.24vw;
+  align-self: flex-end;
+  font-size: 4.5vh;
+  background-color: #5c6b7370;
+  border-radius: 0 0 35px 35px;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.info > span {
+  margin-inline: 2vw;
+}
+
+.desc {
+  visibility: 0;
+  display: none;
+  position: absolute;
+  right: 4vw;
+  background-color: var(--font-color);
+  color: var(--primary-color);
+  border: 1px solid black;
+  height: auto;
+  width: 20vw;
+  margin-inline: 3vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.desc_open {
+  transition: 1s;
+  display: flex;
+  visibility: visible;
+}
+
+#desc {
+  margin-top: 3vh;
+}
+
+.align {
+  position: absolute;
+  top: 0;
+  right: 0.2vw;
+}

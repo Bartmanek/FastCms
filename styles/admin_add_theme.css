@@ -1,0 +1,99 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading {
+  font-size: 7vh;
+  color: var(--font-color);
+  text-align: left;
+  margin-left: 5vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60vh;
+  margin-left: 8.8vw;
+}
+
+.custom_file {
+  display: flex;
+  background-color: #ff0000;
+  color: var(--primary-color);
+  border-radius: 25px;
+  height: 5.56vh;
+  width: 25.78vw;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+  margin: 0;
+}
+
+label {
+  align-self: flex-start;
+  font-size: 3.33vh;
+  margin-left: 1vw;
+  margin-top: 3vh;
+}
+
+input {
+  background-color: #ff0000;
+  color: var(--primary-color);
+  border-radius: 25px;
+  height: 5.56vh;
+  width: 25.78vw;
+  border: none;
+  font-size: 3vh;
+  text-align: center;
+}
+
+textarea {
+  background-color: #ff0000;
+  color: var(--primary-color);
+  border-radius: 25px;
+  height: 13vh;
+  width: 25.78vw;
+  border: none;
+  font-size: 3vh;
+  text-align: center;
+}
+
+input::placeholder {
+  font-family: "League Gothic";
+  color: var(--primary-color);
+}
+
+textarea::placeholder {
+  font-family: "League Gothic";
+  color: var(--primary-color);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input[type="submit"] {
+  width: 9.95vw;
+  margin-top: 1.5vh;
+}
+
+.error_mes {
+  color: #ff0000;
+  align-self: flex-start;
+  font-size: 2.6vh;
+  margin-left: 1vw;
+  font-weight: 500;
+}
+
+.conf_mes {
+  color: green;
+  align-self: flex-start;
+  font-size: 2.6vh;
+  margin-left: 1vw;
+  font-weight: 500;
+}

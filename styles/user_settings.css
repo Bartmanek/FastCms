@@ -1,0 +1,101 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading {
+  font-size: 7vh;
+  color: var(--font-color);
+  text-align: left;
+  margin-left: 5vw;
+}
+
+.form_heading {
+  margin-left: 8.8vw;
+  font-size: 4.6vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60vh;
+  margin-left: 8.8vw;
+}
+
+label[for="password"] {
+  margin-top: 0;
+}
+
+label {
+  align-self: flex-start;
+  font-size: 3.33vh;
+  margin-left: 1vw;
+  margin-top: 3vh;
+}
+
+input {
+  background-color: #ff0000;
+  color: var(--primary-color);
+  border-radius: 25px;
+  height: 5.56vh;
+  width: 25.78vw;
+  border: none;
+  font-size: 2.31vh;
+  text-align: center;
+}
+
+input::placeholder {
+  color: var(--primary-color);
+}
+
+input[type="submit"] {
+  width: 9.95vw;
+  margin-top: 1.5vh;
+}
+
+.error_mes {
+  color: #ff0000;
+  align-self: flex-start;
+  font-size: 2.6vh;
+  margin-left: 1vw;
+  font-weight: 500;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0000;
+  color: var(--primary-color);
+  border-radius: 25px;
+  height: 5.56vh;
+  width: 25.78vw;
+  border: none;
+  font-size: 3vh;
+  text-align: center;
+  margin-right: 4vw;
+  margin-top: 3vh;
+}
+
+.conf_mes {
+  color: green;
+  align-self: flex-start;
+  font-size: 2.6vh;
+  margin-left: 1vw;
+  font-weight: 500;
+}

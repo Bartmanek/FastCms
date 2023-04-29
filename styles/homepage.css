@@ -1,0 +1,65 @@
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 24vw;
+  margin-left: 7vw;
+}
+
+.title {
+  font-size: 8.9vh;
+  width: 32vw;
+  margin-block: 0;
+}
+
+.text {
+  font-size: 4.6vh;
+  width: 32vw;
+  text-indent: 1vw;
+  margin-top: 4vh;
+  margin-bottom: 0;
+}
+
+#programmer_photo {
+  margin-left: 11.21vw;
+  border-radius: 50%;
+  height: 30vw;
+  width: 30vw;
+}
+
+@media only screen and (max-width: 1100px) {
+  .title {
+    font-size: 7.9vh;
+    width: 32vw;
+    margin-block: 0;
+  }
+
+  .text {
+    font-size: 3.1vh;
+    width: 32vw;
+    text-indent: 1vw;
+    margin-top: 4vh;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .title {
+    font-size: 5.9vh;
+    width: 42vw;
+    margin-block: 0;
+  }
+
+  .text {
+    font-size: 2.3vh;
+    width: 32vw;
+    text-indent: 1vw;
+    margin-top: 4vh;
+    margin-bottom: 0;
+  }
+}
